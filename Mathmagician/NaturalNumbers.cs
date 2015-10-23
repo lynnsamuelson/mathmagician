@@ -9,14 +9,15 @@ namespace Mathmagician
 {
     public class NaturalNumbers //must be public for  the tests to recognize the class in the test file
     {
-        private int first; //set to zero by default unless given a value
+        protected int first; //set to zero by default unless given a value
+        //protected gives access to children
 
         public NaturalNumbers()
         {
             first = 1;
         }
 
-        public int GetNext(int x)
+        public virtual int GetNext(int x)
         {
             return x+1;
         }
