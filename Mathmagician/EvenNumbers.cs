@@ -15,7 +15,7 @@ namespace Mathmagician
         public override int GetNext(int x)
         {
             //return x + 2;
-            return base.GetNext(x) + 1;//since GetNext is x+1 then another + 1 = x+2
+            return base.GetNext(x) + 1;//since GetNext in NaturalNumbers is x+1 then another + 1 = x+2
         }
     }
 }

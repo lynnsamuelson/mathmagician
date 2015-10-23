@@ -8,13 +8,13 @@ namespace MathmagicianTests
     public class EvenTests
     {
         [TestMethod]
-        public void EnsureICanCreateClassInstance()
+        public void EvenEnsureICanCreateClassInstance()
         {
             EvenNumbers even = new EvenNumbers();
             Assert.IsNotNull(even);
         }
         [TestMethod]
-        public void ShouldPrintFirstNumber()
+        public void EvenShouldPrintFirstNumber()
         {
             EvenNumbers even = new EvenNumbers();
             int expected = 2;
@@ -22,7 +22,7 @@ namespace MathmagicianTests
             Assert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void ShouldPrintNextNumber()
+        public void EvenShouldPrintNextNumber()
         {
             EvenNumbers even = new EvenNumbers();
             int input = 2;
@@ -32,7 +32,7 @@ namespace MathmagicianTests
         }
 
         [TestMethod]//testm tab tab to get this (test stab method)
-        public void ShouldPrintAVariableSequenceOfNumbers()
+        public void EvenShouldPrintAVariableSequenceOfNumbers()
         {
             EvenNumbers even = new EvenNumbers(); //set-up instance of this class
             int input = 8;
@@ -41,7 +41,7 @@ namespace MathmagicianTests
             CollectionAssert.AreEqual(expected, actual);
         }
         [TestMethod]
-        public void PrintSequenceOfNumbers()
+        public void EvenPrintSequenceOfNumbers()
         {
             EvenNumbers even = new EvenNumbers();
             int length = 7;
