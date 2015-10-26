@@ -14,10 +14,11 @@ namespace MathmagicianTests
             Assert.IsNotNull(odd);
         }
 
+        [TestMethod]
         public void OddShouldPrintFirstNumber()
         {
             OddNumbers odd = new OddNumbers();
-            int expected = 2;
+            int expected = 1;
             int actual = odd.GetFirst();
             Assert.AreEqual(expected, actual);
         }
