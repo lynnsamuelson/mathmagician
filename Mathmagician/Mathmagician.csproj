@@ -47,6 +47,7 @@
     <Compile Include="fibonacciNumbers.cs" />
     <Compile Include="NaturalNumbers.cs" />
     <Compile Include="OddNumbers.cs" />
+    <Compile Include="Prime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

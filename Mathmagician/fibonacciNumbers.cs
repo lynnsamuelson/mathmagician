@@ -10,13 +10,17 @@ namespace Mathmagician
     {
         public FibonacciNumbers()
         {
-            first = 0;    
-            increment = 2;
+            first = 1;    
+            increment = 0;
         }
 
         public override int GetNext(int x)
         {
-            return (x - 1) + (x - 2);
+            
+            int storage = increment;
+            increment = x;
+            return x + storage;
+            
         }
 
     }

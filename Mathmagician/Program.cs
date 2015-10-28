@@ -31,6 +31,23 @@ namespace Mathmagician
                     Console.WriteLine("Whooops!");
                 }
             }
+            else if (response == "fibonacci numbers")
+            {
+                Console.WriteLine("How many?");
+                Console.Write(prompt);
+                string response_length = Console.ReadLine();
+                int length;
+                bool parsed = int.TryParse(response_length, out length);
+                if (parsed)
+                {
+                    FibonacciNumbers fibs = new FibonacciNumbers();
+                    Console.WriteLine(fibs.ToString(fibs.GetSequence(length)));
+                }
+                else
+                {
+                    Console.WriteLine("Whooops!");
+                }
+            }
             else
             {
                 Console.WriteLine("Nope! Do better next time.");
